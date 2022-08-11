@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/signup_text"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@drawable/health"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginVertical="10dp"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/username"
+        android:autofillHints="Your name"
+        tools:ignore="LabelFor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_marginVertical="10dp"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        android:autofillHints=""
+        tools:ignore="LabelFor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editTextTextPersonName2"
+        android:layout_marginVertical="10dp"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/address"
+        android:autofillHints="Your address"
+        tools:ignore="LabelFor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editTextTextPersonName3"
+        android:layout_marginVertical="10dp"
+        android:paddingStart="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/phoneNumber"
+        android:autofillHints="Phone number"
+        tools:ignore="LabelFor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextTextPersonName4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:onClick="goToSignin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_text"
+                android:textColor="@color/purple_700"
+                android:textFontWeight="800"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/editTextTextPersonName4"
+        android:gravity="center"
+        android:text="@string/haveAccount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/have_account"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:text="@string/signin_text"
+        android:onClick="goToSignin"/>
+
+</RelativeLayout>
