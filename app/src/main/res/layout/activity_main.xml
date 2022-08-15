@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:ems="40"
         android:gravity="center"
         android:layout_alignParentTop="true"
@@ -31,36 +31,39 @@
         android:paddingHorizontal="24dp"
         android:text="@string/intro"
         android:autofillHints="Intro"
-        android:textSize="28sp"
+        android:textSize="24sp"
         tools:ignore="LabelFor"  />
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="200dp"
         android:layout_height="50dp"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="2dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="530dp"
         app:cardBackgroundColor="@color/cardview_light_background"
         app:cardCornerRadius="25dp"
-        app:cardElevation="10dp"
-        android:onClick="goToSignin">
+        app:cardElevation="30dp"
+        android:onClick="goToSignIn">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/purple_500"
+            android:background="@color/white"
+
             android:gravity="center">
             <TextView
                 android:id="@+id/textViewHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/start"
-                android:textColor="@color/white"
+                android:textColor="@color/purple_700"
                 android:textSize="21sp"
                 android:textFontWeight="800"
                 />
 
         </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>

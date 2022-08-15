@@ -4,40 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="159dp"
-        android:layout_height="159dp"
-        android:layout_marginTop="76dp"
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rounded_corners"/>
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/arrow"
+        android:onClick="goToHome"/>
 
     <TextView
         android:id="@+id/editTextTextPersonName6"
-        android:layout_width="252dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name: Merdi Kim"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <TextView
         android:id="@+id/editTextTextPersonName7"
         android:layout_width="252dp"
         android:layout_height="29dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email: merdikimuha1@gmail.com"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
@@ -50,6 +54,7 @@
         android:inputType="textPersonName"
         android:text="Phone number: +256759034340"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
 
@@ -62,40 +67,32 @@
         android:inputType="textPersonName"
         android:text="Adddress: Here and there down"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/logout_button"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:onClick="goToMaps"
-        app:strokeColor="@color/light_red"
-        app:strokeWidth="2dp"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="170dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="176dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
-        app:cardBackgroundColor="@color/light_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
 
-        app:cardCornerRadius="25dp"
-        app:cardElevation="50dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/maps"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/logout"
-                android:textColor="@color/red"
-                android:textFontWeight="800"
-                />
-
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goToSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

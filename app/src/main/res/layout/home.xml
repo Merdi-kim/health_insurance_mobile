@@ -13,15 +13,17 @@
         android:layout_height="50dp"
         android:id="@+id/home_button_container"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="200dp"
         android:onClick="goToDuePayments"
         app:cardBackgroundColor="@color/cardview_light_background"
         app:cardCornerRadius="25dp"
         app:cardElevation="50dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="59dp"
             android:gravity="center">
+
             <TextView
                 android:id="@+id/invoices"
                 android:layout_width="wrap_content"
@@ -29,7 +31,7 @@
                 android:text="@string/homeButton"
                 android:textColor="@color/purple_700"
                 android:textFontWeight="800"
-                />
+                android:textSize="17sp"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -56,7 +58,7 @@
                 android:text="@string/mapsButton"
                 android:textColor="@color/purple_700"
                 android:textFontWeight="800"
-                />
+                android:textSize="17sp"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -83,7 +85,7 @@
                 android:text="@string/profileButton"
                 android:textColor="@color/purple_700"
                 android:textFontWeight="800"
-                />
+                android:textSize="17sp"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -110,11 +112,13 @@
                 android:text="@string/historyButton"
                 android:textColor="@color/purple_700"
                 android:textFontWeight="800"
-                />
+                android:textSize="17sp"/>
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/payment_code_button_container"
         android:layout_width="300dp"
@@ -130,26 +134,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
+
             <TextView
                 android:id="@+id/code_payment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/payment_code"
+                android:text="@string/payment_code_button"
                 android:textColor="@color/purple_700"
                 android:textFontWeight="800"
-                />
+                android:textSize="17sp"/>
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="@color/teal_200"
-        android:gravity="center"
-        android:text="@string/motto"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_marginBottom="37dp"
+        android:gravity="center"
+        android:text="@string/motto" />
 
 
 </RelativeLayout>

@@ -9,9 +9,11 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.20218863991662325" />
+        <entry key="app/src/main/res/layout/generated_payment.xml" value="0.108804931640625" />
         <entry key="app/src/main/res/layout/google_maps.xml" value="0.165" />
         <entry key="app/src/main/res/layout/home.xml" value="0.27469482421875" />
-        <entry key="app/src/main/res/layout/profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/payments.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/profile.xml" value="0.13197479248046876" />
         <entry key="app/src/main/res/layout/signin.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.3098958333333333" />
       </map>

@@ -15,11 +15,17 @@
     <string name="app_image">logo</string>
     <string name="signin_text">Sign in</string>
     <string name="signup_text">Sign up</string>
-    <string name="homeButton">Home</string>
+    <string name="homeButton">Payments due</string>
     <string name="mapsButton">Search ambulance</string>
     <string name="profileButton">Profile</string>
     <string name="historyButton">History</string>
     <string name="motto">Here to serve you</string>
-    <string name="payment_code">Generate payment</string>
+    <string name="payment_code">Payment code is 769845</string>
+    <string name="payment_code_button">Generate payment</string>
     <string name="logout">Logout</string>
+    <string name="payments_text">Payments due</string>
+    <string name="month">January</string>
+    <string name="price">300000 ugx</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="profile">profile</string>
 </resources>

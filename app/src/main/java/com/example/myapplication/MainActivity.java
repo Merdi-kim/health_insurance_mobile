@@ -22,7 +22,7 @@ public class MainActivity
         setContentView(R.layout.signup);
     }
 
-    public void goToSignin( View View ) {
+    public void goToSignIn( View View ) {
         setContentView(R.layout.signin);
     }
 
@@ -39,10 +39,10 @@ public class MainActivity
     }
 
     public void goToPassCodeGeneration(View view) {
-
+        setContentView(R.layout.generated_payment);
     }
 
     public void goToDuePayments(View view) {
-
+        setContentView(R.layout.payments);
     }
 }
